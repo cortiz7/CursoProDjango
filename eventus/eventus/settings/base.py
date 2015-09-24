@@ -20,9 +20,11 @@ DJANGO_APPS = (
 
 LOCAL_APPS = (
     'apps.events',
+    'apps.users',
     )
 
 THIRD_PARTY_APPS = (
+
     )
 
 INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS + THIRD_PARTY_APPS
@@ -51,3 +53,5 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+AUTH_USER_MODEL = 'users.User'
